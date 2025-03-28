@@ -1,7 +1,4 @@
-/* === AOS (animation on scroll) === */
-/* Chỉ cần bạn đã thêm link AOS ngoài, không cần CSS thêm ở đây */
-
-/* === BACK TO TOP BUTTON === */
+/* BACK TO TOP */
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -23,9 +20,9 @@
   #backToTop:hover {
     background-color: #0056b3;
   }
-
-  /* === LOADING ANIMATION === */
-#loader-wrapper {
+  
+  /* LOADER */
+  #loader-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,10 +44,8 @@
     animation: spin 1s linear infinite;
   }
   
-  /* Animation quay */
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  
   
