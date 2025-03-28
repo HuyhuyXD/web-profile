@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tên Doanh Nghiệp</title>
+
+  <!-- AOS animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="css/animations.css" />
 
-<!-- CSS Core -->
-<link rel="stylesheet" href="css/style.css">
+  <!-- CSS Core -->
+  <link rel="stylesheet" href="css/style.css">
 
-<!-- CSS từng phần -->
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/hero.css">
-<link rel="stylesheet" href="css/about.css">
-<link rel="stylesheet" href="css/services.css">
-<link rel="stylesheet" href="css/contact.css">
-<link rel="stylesheet" href="css/footer.css">
-
-<!-- Animation + Responsive -->
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
-
+  <!-- CSS từng phần -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-  
+  <!-- Loading Screen -->
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <!-- NỘI DUNG CHÍNH CỦA WEBSITE PHẢI ĐƯỢC THÊM Ở ĐÂY -->
+  <!-- Ví dụ hero section hoặc header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Tên Doanh Nghiệp</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Chào mừng đến với công ty chúng tôi</h2>
+      <p>Giải pháp logistics toàn diện và thông minh cho doanh nghiệp</p>
+      <a href="about.html" class="btn">Tìm hiểu thêm</a>
+    </div>
+  </section>
+
+  <!-- Back to Top button -->
+  <button id="backToTop" title="Lên đầu trang">↑</button>
+
+  <!-- JS Core -->
+  <script src="js/main.js"></script>
+
+  <!-- JS từng phần -->
+  <script src="js/sticky-header.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/aos-init.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/loading.js"></script>
 </body>
-<!-- Loading Screen -->
-<div id="loader-wrapper">
-  <div class="loader"></div>
-</div>
-
-
-<!-- JS Core -->
-<script src="js/main.js"></script>
-
-<!-- JS từng phần -->
-<script src="js/sticky-header.js"></script>
-<script src="js/back-to-top.js"></script>
-<script src="js/aos-init.js"></script>
-<script src="js/contact-form.js"></script> <!-- nếu có xử lý JS cho form -->
-<script src="js/loading.js"></script>
-
 </html>
