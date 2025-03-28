@@ -542,6 +542,30 @@ footer {
       text-align: center;
     }
   }
+
+  /* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+}
+
   
   .map-wrapper {
     margin-top: 40px;
@@ -550,3 +574,56 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
+  /* ============================
+   Responsive layout cho mobile
+   ============================ */
+@media (max-width: 768px) {
+  /* Header: chuyển từ ngang sang dọc */
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Hero section: co lại padding, font nhỏ hơn */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  /* Dịch vụ: hiển thị cột dọc */
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Liên hệ */
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
