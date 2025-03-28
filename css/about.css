@@ -1,0 +1,57 @@
+/* === ABOUT SECTION === */
+.about,
+.about-page {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.about h2,
+.about-page h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #444;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* About Page riêng */
+.about-page h3 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.about-page ul {
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 18px;
+  color: #444;
+}

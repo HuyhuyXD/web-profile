@@ -1,0 +1,48 @@
+/* === RESPONSIVE LAYOUT === */
+@media (max-width: 768px) {
+    /* Header */
+    header .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    /* Hero */
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h2 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    /* Service list */
+    .service-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Contact */
+    .contact-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    /* Footer */
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  }
+  
